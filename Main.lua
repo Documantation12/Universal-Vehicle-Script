@@ -210,3 +210,14 @@ discordSection:addButton(syn and "Join the Discord server" or "Copy Discord Link
 	end
 	setclipboard("https://www.discord.com/invite/ENHYznSPmM")
 end)
+
+
+local function CloseGUI()
+    Venyx:toggle()
+end
+
+UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+    if not gameProcessedEvent and input.KeyCode == Enum.KeyCode.RightControl then
+        CloseGUI()
+    end
+end)
