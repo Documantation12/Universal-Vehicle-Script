@@ -217,7 +217,7 @@ local function CloseGUI()
 end
 
 UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-    if not gameProcessedEvent and input.KeyCode == Enum.KeyCode.RightControl then
+    if not gameProcessedEvent and input.KeyCode == Enum.KeyCode.RightBracket then
         CloseGUI()
     end
 end)
