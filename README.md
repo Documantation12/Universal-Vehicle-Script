@@ -1,2 +1,4 @@
 # Universal-Vehicle-Script
-Universal Vehicle Script
+```lua
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Documantation12/Universal-Vehicle-Script/main/Main.lua'))()
+```
